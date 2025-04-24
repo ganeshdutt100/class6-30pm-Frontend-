@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 30px;
+            margin: 10px;
+        }
+
+        .logo {
+            display: flex;
+            gap: 5px;
+        }
+
+        .logo span {
+            margin-top: 10px;
+            font-weight: bold;
+
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .list {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            margin-top: 9px;
+        }
+
+        /* section1 */
+        .sec1 {
+            display: flex;
+        }
+
+        .sec1 img {
+            width: 300px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* section2 */
+        .sec2 {}
+
+        .sec2 h1 {
+            text-align: center;
+            /* text-decoration: underline; */
+            /* margin: 20px 0; */
+        }
+
+        .empty {
+            height: 3px;
+            width: 200px;
+            background-color: black;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 200px;
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?ga=GA1.1.1874964551.1745238386&semt=ais_hybrid&w=740"
+                alt="">
+            <span>Insta</span>
+        </div>
+        <ul class="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+
+    <!-- section -1 -->
+    <div class="sec1">
+        <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?ga=GA1.1.1874964551.1745238386&semt=ais_hybrid&w=740"
+            alt="">
+        <div class="sec1Text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet consequatur enim eum unde harum
+                sapiente beatae natus, tempora expedita qui deserunt quos commodi, debitis repudiandae, exercitationem
+                temporibus rem neque.</p>
+            <button>Click me </button>
+        </div>
+    </div>
+
+
+    <!-- section-2 -->
+    <div class="sec2">
+        <h1>Lorem ipsum dolor </h1>
+        <div class="empty"></div>
+        <div class="cards">
+            <!-- card-1 -->
+            <div class="card">
+                <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?ga=GA1.1.1874964551.1745238386&semt=ais_hybrid&w=740"
+                    alt="">
+                <h2>Lorem ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet consequatur enim eum unde
+                    harum
+                    sapiente beatae natus, tempora expedita qui deserunt quos commodi, debitis repudiandae,
+                    exercitationem
+                    temporibus rem neque.</p>
+
+                <a href="#">Read more....</a>
+            </div>
+
+
+            <!-- card-2 -->
+            <div class="card">
+                <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?ga=GA1.1.1874964551.1745238386&semt=ais_hybrid&w=740"
+                    alt="">
+                <h2>Lorem ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet consequatur enim eum unde
+                    harum
+                    sapiente beatae natus, tempora expedita qui deserunt quos commodi, debitis repudiandae,
+                    exercitationem
+                    temporibus rem neque.</p>
+
+                <a href="#">Read more....</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
