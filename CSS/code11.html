@@ -32,6 +32,22 @@
             display: block;
         }
 
+
+        .heroSection {
+            display: flex;
+            flex-direction: column;
+            /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+        }
+
+        img {
+            width: 300px;
+        }
+
+
+
+
         @media only screen and (min-width:500px) {
             ul {
                 display: flex;
@@ -39,6 +55,11 @@
 
             .bar i {
                 display: none;
+            }
+
+
+            .heroSection {
+                flex-direction: row;
             }
         }
     </style>
@@ -60,6 +81,14 @@
             <i class="fa-solid fa-bars-staggered"></i>
         </div>
     </nav>
+
+    <div class="heroSection">
+        <img src="https://img.freepik.com/free-photo/business-agreement-handshake-hand-gesture_53876-130006.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740"
+            alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis vitae dolores, reiciendis eum
+            expedita ea laborum corrupti rem ratione nam odio et labore dolore possimus omnis, optio fugiat pariatur!
+        </p>
+    </div>
 </body>
 
 </html>

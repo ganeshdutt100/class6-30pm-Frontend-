@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+        }
+
+        /* phone View  + tablet view */
+        nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-radius: 30px;
+            margin: 5px 30px;
+
+        }
+
+        .logo {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav ul {
+            display: none;
+            gap: 30px;
+            list-style: none;
+        }
+
+        ul li:hover {
+            color: yellow;
+            cursor: pointer;
+        }
+
+        /* .section 1 */
+        .sec1 {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 30px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .sec1Text {
+            margin-top: 10px;
+        }
+
+        .sec1 img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            /* border: none; */
+            margin: 10px;
+            border-radius: 20px;
+            border: 1px solid black;
+
+
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .buttonIcons {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .icons i {
+            font-size: 30px;
+            border: 1px dotted black;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .icons i:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* .section 2 */
+        .sec2 {
+            margin-top: 50px;
+        }
+
+        .sec2 h1 {
+            text-align: center;
+        }
+
+        .emptyTag {
+            background-color: red;
+            width: 200px;
+            height: 2px;
+            border-radius: 50%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            margin: 10px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 300px;
+            padding-bottom: 20px;
+            background-color: lightblue;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+
+        }
+
+        .card p {
+            margin-top: 5px;
+            line-height: 1.5;
+            color: rgb(46, 45, 45);
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        /* footer */
+        footer {
+            background-color: black;
+            color: white;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 5px 10px;
+            margin-bottom: 40px;
+        }
+
+
+
+        .footerText {
+            text-align: center;
+        }
+
+        .footerLink {}
+
+        .footerInput input {
+            border-radius: 20px;
+            padding: 10px 15px;
+            outline: none;
+        }
+
+
+
+        @media only screen and (min-width:500px) {
+
+            /* laptop + tab  */
+            nav ul {
+                display: flex;
+            }
+
+            .bar i {
+                display: none;
+            }
+
+            .thirdCard {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:700px) {
+
+            .sec1 {
+                flex-direction: row;
+            }
+
+
+            footer {
+                flex-direction: row;
+            }
+
+        }
+
+        @media only screen and (min-width:900px) {
+
+            .thirdCard {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">logo</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+
+        <div class="bar">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </nav>
+
+    <!-- .section 1 -->
+    <div class="sec1">
+        <div class="sec1Text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit quidem, temporibus
+                obcaecati ratione sint sunt! Ipsa veniam iste rem temporibus vitae, eos modi nesciunt dolore!
+                Dignissimos ex modi quo.</p>
+
+            <div class="buttonIcons">
+                <button>Click me </button>
+
+                <div class="icons">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740"
+            alt="">
+    </div>
+
+
+    <!-- section 2 -->
+    <div class="sec2">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <div class="emptyTag"></div>
+
+        <div class="cards">
+            <!-- first card -->
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, excepturi!</p>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <a href="">ReadMore...</a>
+            </div>
+
+            <!-- second card -->
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, excepturi!</p>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <a href="">ReadMore...</a>
+            </div>
+
+            <!-- third card -->
+            <div class="card thirdCard">
+                <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, excepturi!</p>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <a href="">ReadMore...</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerText">
+            <h1>Lorem ipsum dolor sit amet.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error illo illum atque voluptatum eveniet
+                pariatur consectetur vero quae veritatis. Pariatur quas minima totam minus eum non fugiat porro
+                molestias?</p>
+        </div>
+        <div class="footerLink">
+            <ul>
+                <h2>Links</h2>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Servers</li>
+            </ul>
+        </div>
+        <div class="footerInput">
+            <h2>Contact</h2>
+            <input type="text">
+            <button>Click me </button>
+        </div>
+    </footer>
+</body>
+
+</html>
