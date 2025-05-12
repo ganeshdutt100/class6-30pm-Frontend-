@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* laptop view */
+
+        nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-radius: 30px;
+            margin: 5px 30px;
+
+        }
+
+        .logo {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        ul li:hover {
+            color: yellow;
+            cursor: pointer;
+        }
+
+        /* phone view */
+
+        @media only screen and (max-width:500px) {
+            nav ul {
+                display: none;
+            }
+
+            nav {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">logo</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+
+        <div class="bar">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </nav>
+</body>
+
+</html>
+
+<!-- min-width = Phone view (100 to  700),  min (700 -> csss) -->
+<!-- max-width  =   laptop view (1200 t0 500), max( 500 -> CSS) -->
