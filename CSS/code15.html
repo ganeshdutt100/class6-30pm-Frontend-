@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background: #000;
+            animation: colorChanger 10s linear infinite alternate;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* backdrop-filter: blur(20px); */
+
+        }
+
+        h1 {
+            backdrop-filter: blur(20px);
+
+            padding: 20px;
+            border-radius: 30px;
+
+            /* padding-top: 200px; */
+
+        }
+
+        /* @keyframes colorChanger {
+            from {
+                background-color: green;
+            }
+
+            to {
+                background-color: red;
+            }
+        } */
+
+        @keyframes colorChanger {
+            0% {
+                /* background-color: black; */
+                background-image: url('https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740');
+                background-size: cover;
+            }
+
+            40% {
+                /* background-color: green; */
+                background-image: url('https://img.freepik.com/free-photo/top-view-unrecognizable-hacker-performing-cyberattack-night_1098-18706.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740');
+                background-size: cover;
+            }
+
+            70% {
+                /* background-color: yellow; */
+                background-image: url('https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740');
+                background-size: cover;
+            }
+
+            100% {
+                /* background-color: blueviolet; */
+                background-image: url('https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?ga=GA1.1.789549951.1745322129&semt=ais_hybrid&w=740');
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Lorem ipsum dolor </h1>
+    </div>
+</body>
+
+</html>
