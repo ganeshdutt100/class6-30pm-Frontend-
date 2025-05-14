@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element</title>
+    <style>
+        /* p::before {
+            content: "Hello, ";
+        }
+
+        p::after {
+            content: " World ";
+        }
+
+        p::first-line {
+            color: blue;
+        }
+
+        p::first-letter {
+            color: red;
+            font-size: 40px;
+        } */
+
+        p::selection {
+            background-color: red;
+            color: white;
+        }
+
+        input::placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Ganesh Dutt">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repellendus?</p>
+</body>
+
+</html>

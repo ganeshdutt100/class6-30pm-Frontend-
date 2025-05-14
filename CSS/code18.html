@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo Selectors</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box:hover {
+            background-color: blue;
+        }
+
+        .box:active {
+            background-color: green;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+
+        /* li:nth-child(even) {
+            background-color: gray;
+        }
+
+        li:nth-child(odd) {
+            background-color: black;
+            color: white;
+        } */
+        /* li:nth-of-type(3) {
+            background-color: gray;
+        } */
+
+        li:not(.list3) {
+            background-color: gray;
+
+        }
+
+        /* li:first-child {
+            background-color: black;
+            color: white;
+        }
+
+        li:last-child {
+            background-color: blueviolet;
+        } */
+    </style>
+</head>
+
+<body>
+
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li class="list3">Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <div class="box" id="demo">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <input type="text">
+
+</body>
+
+</html>
