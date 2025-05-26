@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+    }
+</script>
+
+<body class="bg-gray-900 text-white dark:bg-white dark:text-gray-900">
+    <nav class="flex items-center justify-between   bg-gray-800 text-white p-4 dark:bg-white dark:text-gray-800">
+        <div class="logo">Logo</div>
+        <ul class="flex space-x-4">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Project</li>
+        </ul>
+        <button onclick="toggleDarkMode()" ">Dark/Light Mode</button>
+    </nav>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vitae fugiat laborum totam illo quibusdam tenetur sunt magni unde atque repellat officiis ipsum eius eligendi ea provident dolores! Doloribus, optio!</p>
+    <script>
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</body>
+
+</html>
