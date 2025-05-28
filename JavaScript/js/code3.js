@@ -47,3 +47,39 @@ document.writeln("code 3");
 // let value;
 
 // let value2 = null;
+
+// let newValue = Symbol("hello");
+// console.log(newValue);
+
+// let person = {
+//   name: "john",
+//   data: [newValue],
+// };
+
+// console.log(person.data);
+
+// let a = Symbol("test");
+// let b = Symbol("test");
+
+// console.log(a == b);
+
+let id = Symbol("id");
+
+const user = {
+  name: "John",
+  age: 30,
+  [id]: 123,
+};
+
+for (let key in user) {
+  console.log(key);
+}
+// console.log(JSON.stringify(user));
+console.log(user[id]);
+
+let a = 90;
+
+let output = a >= 50 ? true : false;
+console.log(output);
+
+// (condition)?true:false
