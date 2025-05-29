@@ -79,19 +79,46 @@ document.writeln("Code 5");
 //   console.log("number is not positive");
 // }
 
-let data = 199;
-let premium = 900;
+// let data = 199;
+// let premium = 900;
 
-if (data >= 299) {
-  console.log("data ==>  Youtube");
-  if (premium >= 300) {
-    console.log("premium");
-  } else {
-    console.log("not premium");
-  }
-} else {
-  console.log("You don`t have enough data ");
-}
+// if (data >= 299) {
+//   console.log("data ==>  Youtube");
+//   if (premium >= 300) {
+//     console.log("premium");
+//   } else {
+//     console.log("not premium");
+//   }
+// } else {
+//   console.log("You don`t have enough data ");
+// }
 
 // phone  =  data ✔️
 // youtube =  ✔️
+
+let weekdays = 1;
+
+switch (weekdays) {
+  case 1:
+    console.log("Monday");
+    break;
+
+  case 2:
+    console.log("Tuesday");
+    break;
+
+  case 3:
+    console.log("Wednesday");
+    break;
+
+  case 4:
+    console.log("Thursday");
+    break;
+
+  case 5:
+    console.log("Friday");
+    break;
+
+  default:
+    console.log("invalid weekdays");
+}
