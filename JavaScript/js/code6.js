@@ -42,3 +42,32 @@
 //   console.log("Hello world 2");
 // };
 // arrowFun();
+
+// function methods
+
+// function printName(name) {
+//   console.log("Hello " + name);
+// }
+// printName.call(null, "John");
+
+function Emp(id, name) {
+  this.id = id;
+  this.name = name;
+}
+// id = 1
+function PerEmp(id, name, salary) {
+  Emp.call(this, id, name);
+  this.salary = salary;
+}
+function TmpEmp(id, name) {
+  Emp.call(this, id, name);
+}
+
+let emp1 = new PerEmp(1, "ganesh", "XYZ");
+let emp2 = new TmpEmp(2, "Krishna");
+
+console.log(emp1);
+console.log(emp2);
+
+// sakshi rana  👈 this
+// sakshi rana
