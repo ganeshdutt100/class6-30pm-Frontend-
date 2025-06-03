@@ -20,3 +20,23 @@ document.writeln("Apply method");
 //   last: "Dutt",
 // };
 // console.log(student.fullName.apply(person, ["mathura", "India"]));
+
+// bind(null, [arg[arg[arg]]])
+
+// let web = {
+//   name: "Tailwind",
+//   getName: function () {
+//     return this.name;
+//   },
+// };
+
+// let webName = {
+//   name: "javaScript",
+// };
+
+// let firstValue = web.getName;
+// let output = firstValue.bind(webName);
+// console.log(output());
+
+let a = 34;
+console.log(typeof a.toString());
