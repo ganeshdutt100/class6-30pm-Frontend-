@@ -10,6 +10,7 @@ document.writeln("Apply method");
 // console.log(min);
 
 // const student = {
+
 //   fullName: function (city, country) {
 //     return this.name + " " + this.last + " from  " + city + " , " + country;
 //   },
@@ -35,6 +36,8 @@ document.writeln("Apply method");
 // };
 
 // let firstValue = web.getName;
+// console.log(firstValue);
+
 // let output = firstValue.bind(webName);
 // console.log(output());
 
