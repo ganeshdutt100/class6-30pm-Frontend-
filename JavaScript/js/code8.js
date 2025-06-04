@@ -60,6 +60,34 @@ let obj = {
 
 // console.log(obj.address);
 
-for (let x in obj) {
-  console.log(x + " : " + obj[x]);
+// for (let x in obj) {
+//   console.log(x + " : " + obj[x]);
+// }
+// let i = 1;
+// while (i <= 50) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+
+//   i++;
+// }
+
+// let n = 10;
+// let sum = 0;
+
+// for (let i = 1; i <= n; i++) {
+//   sum += i;
+// }
+// console.log(sum);
+
+//  5 = 5 * 4* 3* 2*1
+
+let num = 5;
+let fact = 1;
+
+for (let i = 1; i <= 5; i++) {
+  fact *= i; //fact = fact *i
 }
+console.log(fact);
+
+// 1*1*2*3*4*5 => 120
