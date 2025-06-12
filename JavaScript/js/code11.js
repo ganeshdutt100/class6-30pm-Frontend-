@@ -27,3 +27,16 @@ let arr = [12, 45, 67, 8, 9, 45, 67, 4, 8, 2];
 // for (let x of arr.values()) {
 //   console.log(x);
 // }
+let arrayLike = {
+  length: 3,
+  0: "apple",
+  1: "banana",
+  2: "orange",
+};
+
+let newArr = Array.from(arrayLike);
+
+console.log(newArr);
+
+let newArray = Array.of("apple", "banana", "orange");
+console.log(newArray);
