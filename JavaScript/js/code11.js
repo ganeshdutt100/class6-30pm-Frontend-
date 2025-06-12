@@ -21,9 +21,9 @@ let arr = [12, 45, 67, 8, 9, 45, 67, 4, 8, 2];
 // }
 // console.log(sum);
 
-for (let x of arr.keys()) {
-  console.log(x);
-}
-for (let x of arr.values()) {
-  console.log(x);
-}
+// for (let x of arr.keys()) {
+//   console.log(x);
+// }
+// for (let x of arr.values()) {
+//   console.log(x);
+// }
