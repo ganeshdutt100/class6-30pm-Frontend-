@@ -9,7 +9,7 @@
 // `;
 // console.log(str);
 
-let str1 = " Ganesh Dutt ";
+let str1 = " ganesh Dutt ";
 let str2 = "apple , banana , orange";
 
 // let output = str1.length;
@@ -27,7 +27,15 @@ let str2 = "apple , banana , orange";
 // let output = str2.replace("a", "o");
 // let output = str2.replace(/a/g, "o");
 
-console.log(output);
+// console.log(output);
 
 // let str = `Hello ${str1}`;
 // console.log(str);
+let str = "aditi Manchanda";
+let titleCaseStr = str
+  .split(" ")
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+  .join(" ");
+ 
+console.log(titleCaseStr); // Output: "Aditi Manchanda"
+ 
