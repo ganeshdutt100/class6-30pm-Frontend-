@@ -8,10 +8,23 @@
 </head>
 
 <body>
-    <p>BOM</p>
+    <!-- <p>BOM</p>
     <p class="time">Time : </p>
-    <button>click me </button>
+    <button>click me </button> -->
+
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
     <script>
+
+
+        function goBack() {
+            window.history.back();
+        }
+
+        function goForward() {
+            window.history.forward();
+        }
+
         // window method
         // window.alert("this is an alert box");
 
@@ -77,6 +90,35 @@
         // document.querySelector('button').addEventListener('click', () => {
         //     window.print()
         // })
+
+
+
+
+        // Accessing user agent information
+        // console.log("User Agent:", window.navigator.userAgent);
+        // // Accessing browser version
+        // console.log("Browser Version:", window.navigator.appVersion);
+        // // Accessing preferred language
+        // console.log("Preferred Language:", window.navigator.language);
+        // // Checking if cookies are enabled
+
+        // console.log("Cookies Enabled:", window.navigator.cookieEnabled ? "Yes" :
+        //     "No");
+        // // Checking online status
+        // console.log("Online Status:", window.navigator.onLine ? "Online" : "Offline");
+
+
+        // console.log(screen.width);
+        // console.log(screen.height);
+
+        // console.log(screen.availWidth);
+        // console.log(screen.availHeight);
+
+        // console.log(screen.colorDepth);
+        // console.log(screen.pixelDepth);
+
+
+
 
     </script>
 </body>
