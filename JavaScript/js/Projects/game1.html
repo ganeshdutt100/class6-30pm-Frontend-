@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Rock, Paper , Scissors </h1>
+
+<p>Computer Score : <span id="computerScore">0</span></p>
+<p>Player Score : <span id="playerScore">0</span></p>
+
+
+<button onclick="player('rock')">🥊 Rock</button>
+<button onclick="player('paper')">📃 Paper</button>
+<button onclick="player('scissors')">✂️ Scissors</button>
+<br> <br>
+<div id="result">Loading...</div>
+
+<body>
+    <script>
+
+        let computerScore = 0;
+        let playerScore = 0;
+        function player(userChoice) {
+            const choices = ["rock", "paper", "scissors"];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+            console.log("Computer choice:", computerChoice);
+
+            let result = "";
+
+            if (userChoice === computerChoice) {
+                result = "It's a tie!";
+            } else if (
+                (userChoice === "rock" && computerChoice === "scissors") ||
+                (userChoice === "paper" && computerChoice === "rock") ||
+                (userChoice === "scissors" && computerChoice === "paper")
+            ) {
+                result = `you win! you chose ${userChoice} and the computer chose ${computerChoice}.`;
+                playerScore++;
+                document.getElementById('playerScore').innerHTML = playerScore;
+            } else {
+                result = `Computer win! computer chose ${computerChoice} and  you chose ${userChoice}. `;
+                computerScore++;
+                document.getElementById('computerScore').innerHTML = computerScore;
+            }
+            document.getElementById('result').innerHTML = result;
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
