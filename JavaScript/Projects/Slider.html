@@ -2,12 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
     <style>
         * {
             font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333;
+            color: white;
+            margin: 0;
+            padding: 0;
         }
 
         .slider {
@@ -16,7 +24,7 @@
             border-radius: 30px;
             position: relative;
             overflow: hidden;
-            margin: auto;
+            margin: 30px auto;
         }
 
         .imagesSlider {
@@ -24,16 +32,18 @@
             height: 100%;
             object-fit: cover;
             border-radius: 30px;
-            transition: opacity .5s ease-in-out;
-            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 1;
             position: absolute;
-            top: 100px;
+            top: 0;
             left: 0;
+            z-index: 1;
         }
 
         .controls {
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
 
         .btn {
@@ -42,43 +52,42 @@
             padding: 10px 20px;
             border-radius: 20px;
             margin: 10px;
-            cursor: pointer
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #555;
         }
     </style>
 </head>
 
 <body>
-    <h1 style="text-align: center;">Image <span style="color: red;">Slider</span> </h1>
+    <h1 style="text-align: center">Image <span style="color: red">Slider</span></h1>
+
     <div class="slider">
         <img class="imagesSlider"
             src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0fGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-            alt="">
-
-        <div class="controls">
-            <div class="btn" onclick="previous()">Previous</div>
-            <div class="btn" onclick="next()">Next</div>
-        </div>
+            alt="slider image" />
     </div>
 
+    <div class="controls">
+        <div class="btn" onclick="previous()">Previous</div>
+        <div class="btn" onclick="next()">Next</div>
+    </div>
 
     <script>
-        let images = [
+        const images = [
             "https://img.freepik.com/premium-vector/technology-background_1302-14982.jpg?ga=GA1.1.2145459938.1750227575&semt=ais_hybrid&w=740",
-
             "https://img.freepik.com/premium-photo/artificial-intelligence-chatbot-is-helping-programmers-write-source-code-3d-rendering_651547-2448.jpg?ga=GA1.1.2145459938.1750227575&semt=ais_hybrid&w=740",
-
             "https://img.freepik.com/premium-photo/programmer-codes-night-from-home_585982-9106.jpg?ga=GA1.1.2145459938.1750227575&semt=ais_hybrid&w=740",
-
             "https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?ga=GA1.1.2145459938.1750227575&semt=ais_hybrid&w=740",
-
             "https://img.freepik.com/premium-photo/programmer-working-computer-dark-room-programmer-coding-code-desktop-computer_112255-9338.jpg?ga=GA1.1.2145459938.1750227575&semt=ais_hybrid&w=740",
-
             "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?ga=GA1.1.2145459938.1750227575&semt=ais_hybrid&w=740"
-        ]
+        ];
 
         let index = 0;
-
-        let imagesSlider = document.querySelector(".imagesSlider");
+        const imagesSlider = document.querySelector(".imagesSlider");
 
         function changeImage(i) {
             index = (i + images.length) % images.length;
@@ -87,21 +96,20 @@
             setTimeout(() => {
                 imagesSlider.src = images[index];
                 imagesSlider.style.opacity = 1;
-            }, 500)
-
+            }, 500);
         }
 
         function next() {
-            changeImage(index + 1)
+            changeImage(index + 1);
         }
-        function previous() {
-            changeImage(index - 1)
 
+        function previous() {
+            changeImage(index - 1);
         }
 
         setInterval(() => {
-            next()
-        }, 5000)
+            next();
+        }, 5000);
     </script>
 </body>
 
