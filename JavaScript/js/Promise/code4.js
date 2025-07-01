@@ -38,3 +38,4 @@ let myPromise = Promise.any([
 
 ])
 myPromise.then(alert)
+// fetch(url ,option)
