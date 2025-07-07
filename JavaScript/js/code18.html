@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Mouse Card</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #222;
+    }
+
+    .card {
+      width: 300px;
+      height: 400px;
+      background: linear-gradient(135deg, #00c9ff, #92fe9d);
+
+      /* background: linear-gradient(120deg, red, blue,white); */
+      border-radius: 20px;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+      transition: 0.1s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      font-family: sans-serif;
+      perspective: 1000px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="card">
+    Move Mouse 👆
+  </div>
+
+   <script>
+    const card = document.getElementById('card');
+
+    card.addEventListener('mousemove', (e)=>{
+      const cardRect = card.getBoundingClientRect();
+
+      const x = e.clientX - cardRect.left;
+      const y = e.clientY - cardRect.top;
+
+
+      const centerX = cardRect.width/2; 
+      const centerY = cardRect.height/2;
+      
+      const rotateX = -(y - centerY)/8;
+      const rotateY = (x - centerX)/8;
+
+card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+});
+
+ card.addEventListener('mouseout',()=>{
+    card.style.transform = `rotateX(0deg) rotateY(0deg)`
+ })
+   </script>
+  </body>
+  </html>
+
+
+  <!-- 200-100 = 100
+
+e.clientX = 0
+e.clientY = 0 
+
+
+-->
+
+<!-- left = 200px 
+top = 150px
+
+x = 250 
+Y  = 180 
+
+x = 250 - 200 = 50 ➡️ ;
+Y= 180 - 150 = 30 ⬇️
+
+-->
+
+    <!-- const x = e.clientX - cardRect.left;
+      const y = e.clientY - cardRect.top; -->
+
+     <!-- -( y < center)  - top  
+     ( y > center)  - down  
+
+     margin = -10px 
+
+    (18>150 ), 10 -->
+
+    <!-- 90/10 = > 9deg -->
