@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+    <input type="text" id="inputName" placeholder="Enter your name"> <span class="alertFun"></span>
+    <br> <br>
+    <input type="text" id="password" placeholder="Enter your password" ><span class="alertFunPass"></span>
+    <br>
+    <br>
+    <button id="btnSubmit" onclick="return formValidation()">Submit</button>
+   </form>
+    <script >
+        function formValidation(){
+            let name = document.getElementById('inputName').value;
+            let password = document.getElementById('password').value;
+            let alertFun = document.querySelector('.alertFun');
+            let alertFunPass = document.querySelector('.alertFunPass');
+            if(name === ""){
+                alertFun.innerHTML = "Please enter your name";
+                return false
+            }else if(password.length <8){
+                alertFunPass.innerHTML = "Password must be at least 8 characters long";
+                return false
+            }else{
+                alertFun.innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>
