@@ -1,20 +1,23 @@
 
 import './App.css'
+import HeroSectioin from './components/HeroSectioin'
+import Navbar from './components/Navbar'
 import './output.css'
-import Card from './components/Card'
+
 
 function App() {
-
-let details1 = "I am a student of FS"
-let details2 = "I am a student of DA"
-let details3 = "I am a student DS"
+let title  = "authentic tumeric truffaut "
+let title1  = "Copper mug try-hard pitchfork  "
   return (
     <>
-   <Card name="Ganesh Dutt" details={details1} />
-   <Card name="Kartik" details={details3} />
-   <Card name="Shubham" details={details2} />
+
+  <Navbar/> 
+  <HeroSectioin heading={title}/>
+  <HeroSectioin heading={title1}/>
+  <HeroSectioin  />
+  console.log("heading ", heading)
  
-  
+
     </>
   )
 }
